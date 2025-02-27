@@ -5,7 +5,7 @@ const { SerialPort } = require('serialport'); // Import SerialPort from 'serialp
 
 // Initialize the Express app
 const app = express();
-const port = 3000; // Server port
+const port = 3000 || PORT; // Server port
 
 // Initialize the SerialPort connection
 const arduinoPort = new SerialPort({
