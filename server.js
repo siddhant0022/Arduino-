@@ -1,11 +1,11 @@
 // Import necessary modules
 const express = require('express');
 const path = require('path');
-const { SerialPort } = require('serialport'); // Import SerialPort from 'serialport'
+const { SerialPort } = require('serialport'); // Import SerialPort from the 'serialport' 
 
 // Initialize the Express app
 const app = express();
-const port = 3000 || PORT; // Server port
+const port = 3000 || PORT; // Server port is stored in the environment variables file
 
 // Initialize the SerialPort connection
 const arduinoPort = new SerialPort({
